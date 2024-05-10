@@ -29,6 +29,9 @@ connection.once("open", () => {
 app.use(cors());
 app.use(bodyParser.json());
 
-//router path manager
-const managerRouter = require("./routes/managerRoutes.js");
-app.use("/manager", managerRouter);
+//router path user
+const userRouter = require("./routes/userRoutes.js");
+app.use("/user", userRouter);
+
+const itemRouter = require("./routes/itemRoutes.js");
+app.use("/item", itemRouter);
