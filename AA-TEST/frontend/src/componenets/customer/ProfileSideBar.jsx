@@ -1,3 +1,4 @@
+// ProfileSidebar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,13 +8,11 @@ import {
   faClipboardList,
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import "./profileSideBar.css"; // Import the CSS file
 
 function ProfileSidebar() {
   return (
-    <div
-      className="position-fixed top-50 start-0 translate-middle-y"
-      style={{ marginLeft: "1.5in", height: "400px" }}
-    >
+    <div className="profile-sidebar">
       <style>
         {`
           .list-group-item:hover {

@@ -37,7 +37,7 @@ function CustomerRegister() {
       toast.success("Customer registered successfully!"); // Display success toast message
       alert("Customer registered successfully!");
       setFormData(initialState); // Reset form fields using initialState
-      navigate(`/landingpage`);
+      navigate(`/user/login-customer`);
     } catch (error) {
       console.error("Error:", error.response.data.error);
       toast.error("Failed to register Customer"); // Display error toast message

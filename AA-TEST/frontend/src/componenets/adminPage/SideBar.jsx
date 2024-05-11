@@ -32,25 +32,28 @@ function Sidebar() {
           </Link>
         </li>
         <li className="my-4">
-          <Link to="/supplier" className="text-light text-decoration-none">
+          <Link
+            to="/supplier/supplierManager/Home"
+            className="text-light text-decoration-none"
+          >
             <FontAwesomeIcon icon={faTruck} className="me-3" />
             Supplier
           </Link>
         </li>
         <li className="my-4">
-          <Link to="/transport" className="text-light text-decoration-none">
+          <Link to="/TransportHome" className="text-light text-decoration-none">
             <FontAwesomeIcon icon={faTruck} className="me-3" />
             Transport
           </Link>
         </li>
         <li className="my-4">
-          <Link to="/feedback" className="text-light text-decoration-none">
+          <Link to="/ComplaintHome" className="text-light text-decoration-none">
             <FontAwesomeIcon icon={faComments} className="me-3" />
             Feedback
           </Link>
         </li>
         <li className="my-4">
-          <Link to="/finance" className="text-light text-decoration-none">
+          <Link to="/financeHome" className="text-light text-decoration-none">
             <FontAwesomeIcon icon={faMoneyBillAlt} className="me-3" />
             Finance
           </Link>
@@ -62,7 +65,7 @@ function Sidebar() {
           </Link>
         </li>
         <li className="my-4">
-          <Link to="/order" className="text-light text-decoration-none">
+          <Link to="/OrderHome" className="text-light text-decoration-none">
             <FontAwesomeIcon icon={faClipboardList} className="me-3" />
             Order
           </Link>

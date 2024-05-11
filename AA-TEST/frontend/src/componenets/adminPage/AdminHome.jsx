@@ -139,6 +139,19 @@ function AdminHome() {
                 </div>
               </div>
             </div>
+            <div className="col-md-4 mt-3">
+              {/* View Recently Added Items button */}
+              <div className="card mb-4 h-100 hover-card">
+                <div className="card-body">
+                  <Link
+                    to={`/apparelavenue/RecentlyAddedItems`} // Change this to the appropriate route
+                    className="btn btn-sm btn-success btn-block"
+                  >
+                    View Recently Added Items
+                  </Link>
+                </div>
+              </div>
+            </div>
             <br></br>
             <div className="row">
               <div className="row">
@@ -166,19 +179,20 @@ function AdminHome() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
-                  <div className="card mb-4 h-100 hover-card">
-                    <div className="card-body">
-                      <h5 className="card-title font-size-large"></h5>
-                      <Link to="/user/allAdmins">
-                        <button className="btn btn-primary btn-lg btn-block">
-                          View All Admins
-                        </button>
-                      </Link>
-                    </div>
+              </div>
+              <div className="col-md-4">
+                <div className="card mb-4 h-100 hover-card">
+                  <div className="card-body">
+                    <h5 className="card-title font-size-large"></h5>
+                    <Link to="/user/allAdmins">
+                      <button className="btn btn-primary btn-lg btn-block">
+                        View All Admins
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
+              <br></br>
             </div>
           </div>
         </div>
