@@ -68,6 +68,3 @@ module.exports = {
   updateCartItem,
   deleteCartItem,
 };
-
-//slip should included using cloudinary method
-//cart variable should add as a variable in user model

@@ -42,16 +42,16 @@ const AdminManagerLogin = () => {
             navigate("/user/inventory");
             break;
           case "Supplier":
-            navigate("/user/supplier");
+            navigate("/supplier/supplierManager/Home");
             break;
           case "Transport":
-            navigate("/user/transport");
+            navigate("/TransportHome");
             break;
           case "Feedback":
-            navigate("/user/feedback");
+            navigate("/ComplaintHome");
             break;
           case "Finance":
-            navigate("/user/finance");
+            navigate("/financeHome");
             break;
           case "Employee":
             navigate("/user/employee");

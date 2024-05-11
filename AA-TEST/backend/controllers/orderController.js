@@ -3,12 +3,15 @@ const Order = require("../models/orderModel");
 const addOrder = async (req, res) => {
   const { address, city, phoneNumber, paymentMethod, slip } = req.body;
 
+  //const { _id: orderby } = req.user;
+
   const newOrder = new Order({
     address,
     city,
     phoneNumber,
     paymentMethod,
     slip,
+    //orderby,
   });
   try {
     const savedOrder = await newOrder.save();

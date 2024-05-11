@@ -47,7 +47,7 @@ exports.getRecentlyAddedItems = async (req, res) => {
   try {
     const recentlyAddedItems = await Item.find()
       .sort({ dateAdded: -1 })
-      .limit(5);
+      .limit(6);
     res.status(200).json(recentlyAddedItems);
   } catch (error) {
     res.status(500).json({ error: error.message });
